@@ -27,4 +27,12 @@ descstat <- function(x)
 
   # QQ plot
   qqnorm(x); qqline(x, col = 2)
+  
+  par(mfrow=c(1,1))
+  
+  # Stem and leaf plot
+  stem(x)
+  
+  # Test of normality
+  shapiro.test(x)
 }
